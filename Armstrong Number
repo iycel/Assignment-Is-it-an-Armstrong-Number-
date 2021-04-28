@@ -1,0 +1,17 @@
+while True:
+    sayi = input("Enter a number")
+    toplam = 0
+    basamak = len(sayi)
+
+    if not sayi.isdigit():
+        print("It is an invalid entry. Don't use non-numeric, float, or negative values!")
+        break
+    else:
+        for x in str(sayi):
+            toplam = toplam + int(x)**basamak
+        if toplam == int(sayi):
+            print("{} is an Armstrong number".format(sayi))
+            break
+        else:
+            print("{} is not an Armstrong number".format(sayi))
+            break
